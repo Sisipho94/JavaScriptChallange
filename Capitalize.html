@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String</h2>
+
+<p>Capitalize each word from the string.</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Capitalize each word on the string";
+
+function capital_letter(str) 
+{
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+</script>
+
+</body>
+</html>
